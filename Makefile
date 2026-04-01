@@ -2,7 +2,7 @@ CC = i686-elf-gcc
 LD = i686-elf-ld
 ASM = nasm
 CFLAGS = -ffreestanding -m32 -O2 -Wall -Wextra -I./include
-LDFLAGS = -m elf_i386 -T linker.ld --oformat binary
+LDFLAGS = -m elf_i386 -T linker.ld
 ASMFLAGS = -f elf32
 
 KERNEL_SRC = src/kernel/kernel.c src/kernel/vga.c src/kernel/idt.c src/kernel/keyboard.c src/kernel/shell.c src/kernel/idt_handler.c src/kernel/pic.c
