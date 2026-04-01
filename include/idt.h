@@ -23,3 +23,9 @@ void idt_set_gate(uint8_t num, uint32_t base, uint16_t selector, uint8_t flags);
 extern void idt_load(struct idt_ptr* idt_ptr);
 
 #endif
+struct cpu_regs {
+    uint32_t ds;
+    uint32_t edi, esi, ebp, esp, ebx, edx, ecx, eax;
+    uint32_t int_no, err_code;
+    uint32_t eip, cs, eflags, useresp, ss;
+};

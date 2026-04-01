@@ -1,6 +1,7 @@
+#include "io.h"
 #include "vga.h"
-#include <stdint.h>
-#include <string.h>
+
+
 
 static uint16_t* vga_buffer = (uint16_t*) 0xB8000;
 static uint8_t vga_color = 0;

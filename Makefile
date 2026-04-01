@@ -7,7 +7,7 @@ ASMFLAGS = -f elf32
 
 KERNEL_SRC = src/kernel/kernel.c src/kernel/vga.c src/kernel/idt.c src/kernel/keyboard.c src/kernel/shell.c src/kernel/idt_handler.c src/kernel/pic.c
 KERNEL_OBJ = $(KERNEL_SRC:.c=.o)
-BOOT_OBJ = src/boot/boot.o src/boot/multiboot_header.o src/boot/pic.o
+BOOT_OBJ = src/boot/boot.o src/boot/multiboot_header.o src/boot/pic.o src/boot/isr.o
 
 all: kernel.iso
 
